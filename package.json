@@ -4,7 +4,8 @@
   "description": "Cocktail Search App built with the MERN stack",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "Arely Miramontes Rodriguez",
   "license": "MIT",
@@ -14,7 +15,9 @@
     "express": "^4.17.1",
     "mongoose": "^5.7.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArelySkywalker/Cocktail-Search-App.git"
