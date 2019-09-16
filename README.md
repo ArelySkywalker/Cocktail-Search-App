@@ -12,9 +12,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Info & ToDos
 
 Version 1 is now live! There is still a lot of work to do on this baby. Some stuff I want to implement are 
- - 1. ~~Add Search functionality~~ Search functionality added!
- - 2. ~~Create more filters~~ Available ingredients filter added!
- - 3. Always more room for refactoring!
+ - 1. User Registration/Login
+ - 2. User cocktail favorites
+ - 3. User cocktail ratings
 
 ## Available Scripts
 
