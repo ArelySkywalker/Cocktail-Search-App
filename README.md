@@ -16,26 +16,5 @@ Version 1 is now live! There is still a lot of work to do on this baby. Some stu
  - 2. User cocktail favorites
  - 3. User cocktail ratings
 
-## Available Scripts
-
-```
-npm install
-```
-Installs packages needed to run this app. 
-
-```
-npm start
-```
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-```
-npm run build
-```
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-
 
 ### Happy Hacking!
