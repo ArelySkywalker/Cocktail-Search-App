@@ -8,6 +8,7 @@ import SearchContainer from './SearchContainer';
 import AboutContainer from './AboutContainer';
 import FiltersContainer from './FiltersContainer';
 import ResultsContainer from './ResultsContainer';
+import UserContainer from './UserContainer';
 
 const MainContainer = () => (
 	<BrowserRouter>
@@ -23,6 +24,7 @@ const MainContainer = () => (
 			<Route path="/about" component={ AboutContainer } />
 			<Route path="/filters" component={ FiltersContainer } />
 			<Route path="/results" component={ ResultsContainer } />
+			<Route path="/profile" component={ UserContainer } />
 		</Switch>
 	</BrowserRouter>
 )
