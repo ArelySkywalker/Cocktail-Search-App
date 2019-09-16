@@ -1,0 +1,35 @@
+// Color Palette
+$desire: #E63946;
+$honeydew: #F1FAEE;
+$light-blue: #A8DADC;
+$queen-blue: #457B9D;
+$space-cadet: #1D3557;
+
+$primary-color: $desire;
+$secondary-color: $queen-blue;
+
+// Basic colors
+$black: #000000;
+$white: #FFFFFF;
+$very-light-gray: #f9f9f9;
+$light-gray: #E3E3E3;
+$gray: #A2A2A2;
+$dark-gray: #636363;
+
+// Breakpoints
+$screen-lg: 1199px;
+$screen-md: 991px;
+$screen-sm: 768px;
+
+// Fonts
+@font-face {
+	font-family: 'Riffle';
+	font-style: normal;
+	font-weight: normal;
+	src: url('./Fonts/Riffle.otf') format('otf'),
+		url('./Fonts/Riffle.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+$header-font: 'Riffle';
+$header-font-2: 'Bellefair', serif;
+$body-font: 'Montserrat', sans-serif;

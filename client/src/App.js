@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/Header';
+import MainContainer from './Containers/MainContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Styles/App.scss';
+
+var is_root = window.location.pathname == "/";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className={`Main ${ is_root ? `root` : `` }`}>
+				<Header />
+				<MainContainer />
+			</div>
+		</div>
+	);
 }
 
 export default App;
