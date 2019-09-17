@@ -14,7 +14,6 @@ class UserContainer extends Component {
 	}
 	
 	onDeleteClick = (id) => {
-		console.log(id);
 		this.props.deleteItem(id);
 	}
 

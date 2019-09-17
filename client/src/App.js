@@ -7,7 +7,7 @@ import './Styles/App.scss';
 import { Provider } from 'react-redux';
 import store from './store';
 
-var is_root = window.location.pathname == "/";
+var is_root = window.location.pathname === "/";
 
 function App() {
 	return (
