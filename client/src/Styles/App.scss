@@ -76,7 +76,7 @@ html, body 								{ overflow-x: hidden; }
 			&.whiskey 					{
 				.Banner-bg 				{ background-image: url('../Components/Images/Optimized-whiskey.jpg') !important; }
 			}
-			&.search, &.about, &.filters, &.results {
+			&.search, &.about, &.filters, &.results, &.profile {
 				.Banner-bg 				{ background-image: url('../Components/Images/Optimized-mezcal.jpg') !important; }
 			}
 		}
