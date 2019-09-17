@@ -5,6 +5,7 @@ import Banner from '../Components/Banner';
 import Card from '../Components/Card';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../Actions/itemActions';
+import ItemModal from '../Components/ItemModal';
 import propTypes from 'prop-types';
 
 class UserContainer extends Component {
@@ -26,6 +27,7 @@ class UserContainer extends Component {
 					<div className="row">
 						<div className="col-12">
 							<h3>User Page</h3>
+							<ItemModal />
 							<ListGroup>
 								{items.map(({id, name}) => (
 									<ListGroupItem key={id}>
