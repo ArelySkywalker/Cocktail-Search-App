@@ -13,7 +13,7 @@
   "author": "Arely Miramontes Rodriguez",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "bcryptjs": "^2.4.3",
     "concurrently": "^4.1.2",
     "express": "^4.17.1",
     "mongoose": "^5.7.1",
