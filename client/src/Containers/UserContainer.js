@@ -19,7 +19,8 @@ class UserContainer extends Component {
 	}
 
 	render() {
-        const { items } = this.props.item;
+		const { items } = this.props.item;
+		console.log(items);
 		return (
 			<div className="Recipes">
 				<Banner />
@@ -29,13 +30,13 @@ class UserContainer extends Component {
 							<h3>User Page</h3>
 							<ItemModal />
 							<ListGroup>
-								{items.map(({id, name}) => (
-									<ListGroupItem key={id}>
+								{items.map(({_id, name}) => (
+									<ListGroupItem key={_id}>
 										<Button
 											className="remove-btn"
 											color="danger"
 											size="sm"
-											onClick={this.onDeleteClick.bind(this, id)}
+											onClick={this.onDeleteClick.bind(this, _id)}
 										>
 											&times;
 										</Button>
