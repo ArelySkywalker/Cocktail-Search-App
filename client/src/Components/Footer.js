@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RegisterModal from './Auth/RegisterModal';
 
 class Footer extends Component {
 	state = { showing: false };
@@ -14,7 +15,7 @@ class Footer extends Component {
 						<div className="menu col-md-6">
 							<ul>
 								<li><a href="/about">About</a></li>
-								<li><a href="/filters">Available Ingredients</a></li>
+								<RegisterModal />
 							</ul>
 						</div>
 					</div>
