@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import RegisterModal from './Auth/RegisterModal';
+import Logout from './Auth/Logout';
 
 class Footer extends Component {
 	state = { showing: false };
@@ -16,6 +17,7 @@ class Footer extends Component {
 							<ul>
 								<li><a href="/about">About</a></li>
 								<RegisterModal />
+								<Logout />
 							</ul>
 						</div>
 					</div>
