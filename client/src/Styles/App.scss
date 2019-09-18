@@ -151,6 +151,14 @@ html, body 								{ overflow-x: hidden; }
 			}
 		}
 
+		.Profile						{
+			.list-group 				{
+				.list-group-item 		{ text-align: left; 
+					.btn 				{ margin-right: 20px; }
+				}
+			}
+		}
+
 		.Footer 						{ padding: 40px 20px;
 			.row 						{ display: flex; flex-direction: row; align-items: center; 
 				.copyright 				{ text-align: left;

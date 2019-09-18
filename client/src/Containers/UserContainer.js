@@ -22,7 +22,7 @@ class UserContainer extends Component {
 		const { items } = this.props.item;
 		console.log(items);
 		return (
-			<div className="Recipes">
+			<div className="Profile">
 				<Banner />
 				<div className="container">
 					<div className="row">
