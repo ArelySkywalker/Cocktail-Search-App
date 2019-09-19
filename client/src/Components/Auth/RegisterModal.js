@@ -85,7 +85,7 @@ class RegisterModal extends Component {
         return(
             <div>
                 <li>
-                    <a onClick={this.toggle} href="#">Register</a>
+                    <a onClick={this.toggle} href="javascript:void(0);">Register</a>
                 </li>
 
                 <Modal

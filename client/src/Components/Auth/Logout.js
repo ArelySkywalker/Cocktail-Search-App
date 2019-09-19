@@ -10,7 +10,7 @@ export class Logout extends Component {
     render() {
         return (
             <Fragment>
-                <li><a onClick={this.props.logout} href="#">Logout</a></li>
+                <li><a onClick={this.props.logout} href="javascript:void(0);">Logout</a></li>
             </Fragment>
         )
     }

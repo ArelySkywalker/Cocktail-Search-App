@@ -17,6 +17,7 @@ class Footer extends Component {
 
 		const authLinks = (
 			<Fragment>
+				<li><a href="/profile">My Profile</a></li>
 				<Logout />
 			</Fragment>
 		);

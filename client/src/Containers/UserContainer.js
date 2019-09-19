@@ -6,9 +6,15 @@ import Card from '../Components/Card';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../Actions/itemActions';
 import ItemModal from '../Components/ItemModal';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class UserContainer extends Component {
+	
+	static propTypes = {
+		getItems: PropTypes.func.isRequired,
+		item: PropTypes.object.isRequired,
+		isAuthenticated: PropTypes.bool
+	}
 
     componentDidMount() {
         this.props.getItems();
@@ -32,14 +38,17 @@ class UserContainer extends Component {
 							<ListGroup>
 								{items.map(({_id, name}) => (
 									<ListGroupItem key={_id}>
-										<Button
-											className="remove-btn"
-											color="danger"
-											size="sm"
-											onClick={this.onDeleteClick.bind(this, _id)}
-										>
-											&times;
-										</Button>
+										{this.props.isAuthenticated ? 
+											<Button
+												className="remove-btn"
+												color="danger"
+												size="sm"
+												onClick={this.onDeleteClick.bind(this, _id)}
+											>
+												&times;
+											</Button> : null
+										}
+										
 										{name}
 									</ListGroupItem>
 								))}
@@ -53,12 +62,9 @@ class UserContainer extends Component {
 	}
 }
 
-UserContainer.propTypes = {
-    getItems: propTypes.func.isRequired,
-    item: propTypes.object.isRequired
-};
 const mapStateToProps = (state) => ({
-    item: state.item
+	item: state.item,
+	isAuthenticated: state.auth.isAuthenticated
 });
 export default connect(
 	mapStateToProps, 

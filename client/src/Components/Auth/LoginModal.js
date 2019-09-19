@@ -80,7 +80,7 @@ class LoginModal extends Component {
         return(
             <div>
                 <li>
-                    <a onClick={this.toggle} href="#">Login</a>
+                    <a onClick={this.toggle} href="javascript:void(0);">Login</a>
                 </li>
 
                 <Modal
