@@ -16,5 +16,8 @@ Version 1 is now live! There is still a lot of work to do on this baby. Some stu
  - 2. User cocktail favorites
  - 3. User cocktail ratings
 
+## How to run
+
+Currently right now you can't run this app since I have it set up with my config files and Mongo DB. But once I finish this, I'll add dummy files so you can create your own DB and run yourself!
 
 ### Happy Hacking!
