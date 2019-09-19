@@ -25,8 +25,11 @@ html, body 								{ overflow-x: hidden; }
 				.fas 					{ color: $primary-color; font-size: 2rem; margin-right: 15px; }
 			}
 			.Title 						{ text-align: right; 
-				.fas 					{ cursor: pointer; font-size: 2rem; }
-				.fa-times 				{ display: none; }
+				p 						{ display: inline-block; margin: 0; padding-right: 20px; }
+				span 					{ vertical-align: middle; 
+					.fas 				{ cursor: pointer; font-size: 2rem; }
+					.fa-times 			{ display: none; }
+				}
 			}
 			
 			&.open 						{

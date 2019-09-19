@@ -1,10 +1,33 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import RegisterModal from './Auth/RegisterModal';
+import LoginModal from './Auth/LoginModal';
 import Logout from './Auth/Logout';
 
 class Footer extends Component {
 	state = { showing: false };
+
+	static propTypes = {
+		auth: PropTypes.object.isRequired
+	}
+
 	render() {
+		const { isAuthenticated, user } = this.props.auth;
+
+		const authLinks = (
+			<Fragment>
+				<Logout />
+			</Fragment>
+		);
+
+		const guestLinks = (
+			<Fragment>
+				<RegisterModal />
+				<LoginModal />
+			</Fragment>
+		)
+
 		const { showing } = this.state;
 		return (
 			<div className="Footer">
@@ -16,8 +39,7 @@ class Footer extends Component {
 						<div className="menu col-md-6">
 							<ul>
 								<li><a href="/about">About</a></li>
-								<RegisterModal />
-								<Logout />
+								{ isAuthenticated ? authLinks : guestLinks }
 							</ul>
 						</div>
 					</div>
@@ -27,4 +49,11 @@ class Footer extends Component {
 	}
 }
 
-export default Footer;
+const mapStateToProps = state => ({
+	auth: state.auth
+})
+
+export default connect(
+	mapStateToProps,
+	null
+)(Footer);
