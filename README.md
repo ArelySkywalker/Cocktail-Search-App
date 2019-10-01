@@ -1,5 +1,5 @@
 # Six Gummy Bears and some Scotch 
-**Full MERN stack version of my cocktail search app, [Six Gummy Bears and some Scotch](https://github.com/ArelySkywalker/Six-Gummy-Bears-and-some-Scotch).** <br>
+**(IN PROGRESS) Full MERN stack version of my cocktail search app, [Six Gummy Bears and some Scotch](https://github.com/ArelySkywalker/Six-Gummy-Bears-and-some-Scotch).** <br>
 Cocktail Search App that let's you search &amp; filter for cocktails built with React.<br>
 
 [Live App](https://gummy-bears-and-some-scotch.firebaseapp.com/)<br>
